@@ -3,13 +3,17 @@
  */
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: ['plugin:@typescript-eslint/recommended'],
+  extends: ['airbnb-base', 'plugin:@typescript-eslint/recommended'],
   plugins: ['@typescript-eslint'],
   env: {
     browser: true,
-    node: true,
+    node: true
   },
   rules: {
-    '@typescript-eslint/no-var-requires': 'off', // 允许使用 require()
-  },
+    semi: 0,
+    'comma-dangle': 0,
+    'linebreak-style': 0,
+    'import/prefer-default-export': 0,
+    '@typescript-eslint/no-var-requires': 0 // 允许使用 require()
+  }
 }
