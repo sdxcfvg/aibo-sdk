@@ -9,7 +9,7 @@ export default defineUserConfig({
   description: packageJson.description,
 
   // 将部署站点的基本 URL github上用的前缀  eg:'/project name/'
-  base: `/TongBan-monitor/${packageJson.name}/`,
+  base: `/tongban-monitor/${packageJson.name}/tree/gh-pages/`,
 
   theme: defaultTheme({
     navbar: [
