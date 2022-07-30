@@ -6,7 +6,7 @@ tagline: For Fronted Monitoring 🔍
 
 actions:
   - text: Get Started ➡
-    link: /guide/
+    link: /api/
     type: primary
   # - text: Github
   #   link: https://github.com/981377660LMT/aibo-sdk
