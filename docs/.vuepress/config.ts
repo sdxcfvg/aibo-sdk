@@ -9,7 +9,7 @@ export default defineUserConfig({
   description: packageJson.description,
 
   // 将部署站点的基本 URL github上用的前缀  eg:'/project name/'
-  base: `/${packageJson.name}/`,
+  base: `/tongban-monitor/${packageJson.name}/tree/gh-pages/`,
 
   theme: defaultTheme({
     navbar: [
@@ -24,7 +24,7 @@ export default defineUserConfig({
       },
       {
         text: 'GitHub',
-        link: 'https://github.com/981377660LMT/aibo-sdk'
+        link: 'https://github.com/tongban-monitor/aibo-sdk'
       }
     ],
     // 左上角logo
