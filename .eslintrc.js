@@ -7,7 +7,12 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   env: {
     browser: true,
-    node: true
+    node: true,
+    es2021: true
+  },
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module'
   },
   rules: {
     semi: 0,
