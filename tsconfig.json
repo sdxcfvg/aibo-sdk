@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
+    "target": "ES5",
+    "removeComments": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": true,
-    "checkJs": true,
+    "checkJs": false,
     "declaration": true,
+    "declarationDir": "dist/types", // 生成的 .d.ts文件路径，这里统一生成到dist/types文件夹下
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": true,
     "strict": true,
     "strictNullChecks": true,
     "sourceMap": true,
@@ -15,7 +17,11 @@
     "skipLibCheck": true,
     "typeRoots": ["./types", "./node_modules/@types"],
     "baseUrl": "./src",
-    "outDir": "./lib"
+    "paths": {
+      "@/*": ["./src/*"],
+      "@test/*": ["./test/*"]
+    }
   },
-  "exclude": ["node_modules", "test", "lib"]
+  "include": ["src/**/*"], // 哪些文件的类型需要导出
+  "exclude": ["node_modules", "test", "dist", "coverage"]
 }

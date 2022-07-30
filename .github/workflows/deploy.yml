@@ -1,0 +1,34 @@
+name: 'Deploy(master)'
+
+on:
+  push:
+    branches:
+      - master
+
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+
+      - run: npm i pnpm@latest -g
+      - run: pnpm install
+      - run: pnpm run lint
+      - run: pnpm run test
+      - run: pnpm run build
+      - run: pnpm run docs:build
+
+      - name: 'Deploy(master)'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./docs/.vuepress/dist
+          github_token: ${{ secrets.Deploy }}
+          commit_message: Update Github gh-pages

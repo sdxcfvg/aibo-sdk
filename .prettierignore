@@ -1,9 +1,12 @@
-lib
-
-.vscode
 .husky
 node_modules
 package-lock.json
 yarn.lock
 .DS_Store
 .code
+
+/dist
+
+.eslintcache
+
+/coverage
