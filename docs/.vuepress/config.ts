@@ -24,7 +24,7 @@ export default defineUserConfig({
       },
       {
         text: 'GitHub',
-        link: 'https://github.com/TongBan-monitor/aibo-sdk'
+        link: 'https://github.com/tongban-monitor/aibo-sdk'
       }
     ],
     // 左上角logo
