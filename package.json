@@ -35,12 +35,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/981377660LMT/aibo-sdk"
+    "url": "https://github.com/TongBan-monitor/aibo-sdk"
   },
   "bugs": {
-    "url": "https://github.com/981377660LMT/aibo-sdk/issues"
+    "url": "https://github.com/TongBan-monitor/aibo-sdk/issues"
   },
-  "homepage": "https://981377660lmt.github.io/aibo-sdk/",
+  "homepage": "https://TongBan-monitor.github.io/aibo-sdk/",
   "devDependencies": {
     "@babel/core": "^7.18.9",
     "@babel/plugin-transform-runtime": "^7.18.9",

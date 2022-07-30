@@ -9,7 +9,7 @@ actions:
     link: /api/
     type: primary
   # - text: Github
-  #   link: https://github.com/981377660LMT/aibo-sdk
+  #   link: https://github.com/TongBan-monitor/aibo-sdk
   #   type: secondary
 
 features:
