@@ -2,7 +2,7 @@ interface Plugin {
   name: string
 }
 
-// dev提交emmm
+// dev提交
 
 console.log('hello')
 
